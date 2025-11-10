@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+module.exports = async function handler(req, res) {
   const clientId = process.env.MICROSOFT_CLIENT_ID;
   
   const protocol = req.headers['x-forwarded-proto'] || 'https';
