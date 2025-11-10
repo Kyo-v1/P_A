@@ -1,7 +1,7 @@
 // ملف: api/auth/google.js
 // بداية OAuth flow لـ Google
 
-export default function handler(req, res) {
+module.exports = async function handler(req, res) {
   const clientId = process.env.GOOGLE_CLIENT_ID;
   
   // الحصول على الـ URL بشكل صحيح
