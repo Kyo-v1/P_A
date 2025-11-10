@@ -1,7 +1,7 @@
 // ملف: api/auth/google/callback.js
 // استقبال الرد من Google وحفظ الـ tokens
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const { code, state } = req.query;
 
   if (!code) {
