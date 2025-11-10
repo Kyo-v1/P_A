@@ -1,7 +1,7 @@
 // ملف: api/auth/microsoft/callback.js
 // استقبال الرد من Microsoft وحفظ الـ tokens
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const { code, state } = req.query;
 
   if (!code) {
